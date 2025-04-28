@@ -28,14 +28,13 @@ int main() {
     cout <<"What type of employee would you like to create?" << endl;
     cout << "1. Manager" << endl;
     cout << "2. Developer" << endl;
+    cout << "Enter your choice (1 or 2): ";
     int choice;
     cin >> choice;
     if(choice == 1){
-        e1 = new Manager();
         e1->showDetails();
     }
     else if(choice == 2){
-        e2 = new Developer();
         e2->showDetails();
     }
     else{
